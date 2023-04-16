@@ -18,7 +18,7 @@ public class HospitalSpringApplication {
         SpringApplication.run(HospitalSpringApplication.class, args);
     }
 
-    @Bean
+    //@Bean
     CommandLineRunner start(PatientRepository patientRepository) {
         return args -> {
             Stream.of("Mohamed", "Hassan", "Najat")
@@ -27,7 +27,7 @@ public class HospitalSpringApplication {
                                 .name(name)
                                 .dateofbirth(new Date())
                                 .sick(true)
-                                .score(75)
+                                .score(115)
                                 .build();
                         patientRepository.save(patient);
                     });

@@ -16,22 +16,22 @@
                 <div>
                     <label for="name">Nom</label>
                     <input id="name" class="form-control" type="text" name="name" th:value="${patient.name}">
-                    <span th:errors="${patient.name}"></span>
+                    <span class="text-danger" th:errors="${patient.name}"></span>
                 </div>
                 <div>
                     <label>Date Naissance</label>
                     <input class="form-control" type="date" name="dateofbirth" th:value="${patient.dateofbirth}">
-                    <span th:errors="${patient.dateofbirth}"></span>
+                    <span class="text-danger" th:errors="${patient.dateofbirth}"></span>
                 </div>
                 <div>
                     <label>Malade</label>
                     <input type="checkbox" name="sick" th:checked="${patient.sick}">
-                    <span th:errors="${patient.sick}"></span>
+                    <span class="text-danger" th:errors="${patient.sick}"></span>
                 </div>
                 <div>
                     <label>Score</label>
                     <input class="form-control" type="text" name="score" th:value="${patient.score}">
-                    <span th:errors="${patient.score}"></span>
+                    <span class="text-danger" th:errors="${patient.score}"></span>
                 </div>
                 <button type="submit" class="btn btn-primary">
                     <i class="bi bi-save"></i>
